@@ -1,0 +1,167 @@
+// PLUMBER - Easy baseline grids with SASS
+// https://jamonserrano.github.io/plumber-sass
+// Copyright 2016 Viktor Honti
+// MIT License
+
+@mixin plumber(
+	$font-size: null,
+	$line-height: null,
+	$leading-top: null,
+	$leading-bottom: null,
+	$grid-height: null,
+	$baseline: null,
+	$use-baseline-origin: null
+) {
+	// *** VALIDATE PARAMETERS ***
+	// font-size
+	@if not $font-size {
+		$font-size: -plumber-get-default(font-size);
+	}
+	@if not unitless($font-size) or $font-size <= 0 {
+		@error '$font-size parameter must be a positive unitless number, got #{$font-size} instead';
+	}
+
+	// line-height
+	@if not $line-height {
+		$line-height: -plumber-get-default(line-height);
+	}
+	@if not unitless($line-height) or $line-height != round($line-height) or $line-height < 1 {
+		@error '$line-height parameter must be a positive unitless integer, got #{$line-height} instead';
+	}
+
+	// leading-top
+	@if not $leading-top {
+		$leading-top: -plumber-get-default(leading-top);
+	}
+	@if not -plumber-is-integer($leading-top) {
+		@error '$leading-top parameter must be a non-negative integer, got #{$leading-top} instead.';
+	}
+
+	// leading-bottom
+	@if not $leading-bottom {
+		$leading-bottom: -plumber-get-default(leading-bottom);
+	}
+	@if not -plumber-is-integer($leading-bottom) {
+		@error '$leading-bottom parameter must be a non-negative integer, got #{$leading-bottom} instead';
+	}
+
+	// grid-height
+	@if not $grid-height {
+		$grid-height: -plumber-get-default(grid-height);
+	}
+	@if unitless($grid-height) or $grid-height < 0 {
+		@error '$grid-height parameter must be a positive unit, got #{$grid-height} instead';
+	}
+
+	// baseline
+	@if not $baseline {
+		$baseline: -plumber-get-default(baseline);
+	}
+	@if not $baseline {
+		@error '$baseline must be passed as a parameter or defined in defaults';
+	} @else if not (unitless($baseline) and $baseline >= 0 and $baseline < 1) {
+		@error '$baseline parameter must be a unitless fraction between 0 and 1, got #{$baseline} instead';
+	}
+
+	// use-baseline-origin
+	@if not $use-baseline-origin {
+		$use-baseline-origin: -plumber-get-default(use-baseline-origin);
+	}
+	@if type-of($use-baseline-origin) != bool {
+		@error '$use-baseline-origin parameter must be Boolean, got #{$use-baseline-origin} instead';
+	}
+
+	// *** CALCULATE BASELINE CORRECTION ***
+	// the distance of the original baseline from the bottom
+	$baseline-from-bottom: ($line-height - $font-size) / 2 + ($font-size * $baseline);
+	// the corrected baseline will be on the nearest gridline
+	$corrected-baseline: round($baseline-from-bottom);
+	// the difference between the original and the corrected baseline
+	$baseline-difference: $corrected-baseline - $baseline-from-bottom;
+	
+	// if baseline origin is used for leadings substract the distance of the baseline from the edges
+	@if $use-baseline-origin == true {
+		$leading-top: $leading-top - ($line-height - $corrected-baseline);
+		$leading-bottom: $leading-bottom - $corrected-baseline;
+	}
+
+	// *** CALCULATE FONT SIZE AND LINE HEIGHT
+	$font-size: $font-size * $grid-height;
+	$line-height: $line-height * $grid-height;
+
+	// *** CALCULATE MARGINS AND PADDINGS ***
+	$padding-top: null;
+	$margin-top: null;
+	$margin-bottom: null;
+	$padding-bottom: null;
+	
+	@if $baseline-difference < 0 {
+		// add top leading
+		$margin-top: $leading-top * $grid-height;
+		// push the baseline down to the next gridline
+		$padding-top: - $baseline-difference * $grid-height;
+		// add the remaining distance to reach the next gridline
+		$padding-bottom: (1 + $baseline-difference) * $grid-height;
+		// add bottom leading and remove the 1 excess grid height that comes from pushing down
+		$margin-bottom: ($leading-bottom - 1) * $grid-height;
+	} @else {
+		// add top leading and remove the 1 excess grid height that comes from pulling up
+		$margin-top: ($leading-top - 1) * $grid-height;
+		// pull the baseline up to the previous gridline
+		$padding-top: (1 - $baseline-difference) * $grid-height;
+		// add the remaining distance to reach the next gridline
+		$padding-bottom: $baseline-difference * $grid-height;
+		// add bottom leading
+		$margin-bottom: $leading-bottom * $grid-height;
+	}
+	
+	// round pixel values to decrease browser inconsistencies
+	@if unit($grid-height) == "px" {
+		$line-height: -plumber-round($line-height);
+		$margin-top: -plumber-round($margin-top);
+		$padding-top: -plumber-round($padding-top);
+		$padding-bottom: -plumber-round($padding-bottom);
+		$margin-bottom: -plumber-round($margin-bottom);
+	}
+
+	// *** CSS OUTPUT ***
+	font-size: $font-size;
+	line-height: $line-height;
+	margin-top: $margin-top;
+	padding-top: $padding-top;
+	padding-bottom: $padding-bottom;
+	margin-bottom: $margin-bottom;
+}
+
+// *** DEFAULTS *** 
+// Do not change it here, use the plumber-set-defaults mixin instead!
+$-plumber-defaults: (
+	font-size: 2,
+	line-height: 3,
+	leading-top: 0,
+	leading-bottom: 0,
+	grid-height: 1rem,
+	baseline: null,
+	use-baseline-origin: false,
+) !default;
+
+// Merge provided settings into the defaults map 
+@mixin plumber-set-defaults($defaults...) {
+	$-plumber-defaults: map-merge($-plumber-defaults, keywords($defaults)) !global;
+}
+
+// Get a default value 
+@function -plumber-get-default($key) {
+	@return map-get($-plumber-defaults, $key);
+}
+
+// Check if a value is a non-negative integer
+@function -plumber-is-integer($value) {
+	@return (unitless($value) and $value == round($value));
+}
+
+// Round value to the nearest quarter pixel
+// This provides reasonable precision and prevents grid creep (by fractions adding up) in most browsers
+@function -plumber-round($value) {
+	@return round($value * 4) / 4;
+}
