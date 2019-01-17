@@ -1,0 +1,125 @@
+/* Welcome new Grid! */
+.grid {
+  margin-left:-2%;
+  margin-right:-2%;
+
+  /* default spaces */
+  & [class*='col-'] {
+    display: block;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+  }
+
+  &.fixedSpaces {
+    $gapSpace: 10px;
+
+    margin-left: -$gapSpace;
+    margin-right: -$gapSpace;
+
+    >[class*='col-'] {
+      padding-left: $gapSpace;
+      padding-right: $gapSpace;
+    }
+  }
+
+  &.noSpaces {
+    margin-left:0;
+    margin-right:0;
+
+    >[class*='col-'] {
+      padding-left:0;
+      padding-right:0;
+    }
+  }
+
+  .toLeft[class*='col-'] {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  .toRight[class*='col-'] {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    float: right;
+  }
+
+  .toCenter[class*='col-'] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  // generate colums
+  // .col-1-12 { width: 8.33333%; }
+  @for $i from 1 through 12 {
+    $width: (100% / 12) * $i;
+
+    > .col-#{$i}-12 {
+      max-width: $width;
+    }
+  }
+
+  // generate colums
+  // .col-1-10 { width: 10%; }
+  @for $i from 1 through 10 {
+    $width: (100% / 10) * $i;
+
+    > .col-#{$i}-10 {
+      max-width: $width;
+    }
+  }
+
+  & + .grid {
+    margin-top: 20px;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@include media($desktop, "max") {
+  .grid > .col-desktop-1-1 { max-width:  100% !important; }
+  .grid > .col-desktop-1-2 { max-width:  50% !important; }
+  .grid > .col-desktop-1-3 { max-width:  33.33333333% !important; }
+  .grid > .col-desktop-2-3 { max-width:  66.66666666% !important; }
+  .grid > .col-desktop-1-4 { max-width:  25% !important; }
+  .grid > .col-desktop-3-4 { max-width:  75% !important; }
+}
+
+/* ipad landscape and > */
+@include media($tablet, "max") {
+  .grid:not(.later) > [class*='col-']:not([class*='col-phablet-']):not([class*='col-phone-']) { max-width: 100%; }
+  .grid > .col-tablet-1-1 { max-width: 100% !important; }
+  .grid > .col-tablet-1-2 { max-width: 50% !important; }
+  .grid > .col-tablet-1-3 { max-width: 33.33333333% !important; }
+  .grid > .col-tablet-2-3 { max-width: 66.66666666% !important; }
+  .grid > .col-tablet-1-4 { max-width: 25% !important; }
+  .grid > .col-tablet-3-4 { max-width: 75% !important; }
+  .grid > .col-tablet-1-5 { max-width: 20% !important; }
+  .grid > .col-tablet-2-5 { max-width: 40% !important; }
+  .grid > .col-tablet-3-5 { max-width: 60% !important; }
+  .grid > .col-tablet-4-5 { max-width: 80% !important; }
+}
+
+/* phablet landscape and ipad portrait and > */
+@include media($phablet, "max") {
+  .grid.later > [class*='col-']:not([class*='col-phone-']) { max-width: 100%; }
+  .grid > .col-phablet-1-1 { max-width: 100% !important; }
+  .grid > .col-phablet-1-2 { max-width: 50% !important; }
+  .grid > .col-phablet-1-3 { max-width: 33.33333333% !important; }
+  .grid > .col-phablet-1-4 { max-width: 25% !important; }
+  .grid > .col-phablet-3-4 { max-width: 75% !important; }
+}
+
+/* phone portrait and > */
+@include media($phone, "max") {
+  .grid > [class*='col-'] { max-width: 100%; }
+  .grid > .col-phone-1-1 { max-width: 100% !important; }
+  .grid > .col-phone-1-2 { max-width: 50% !important; }
+  .grid > .col-phone-1-3 { max-width: 33.33333333% !important; }
+  .grid > .col-phone-2-3 { max-width: 66.66666666% !important; }
+}
