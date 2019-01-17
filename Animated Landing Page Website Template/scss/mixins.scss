@@ -1,0 +1,90 @@
+//Mixins Library
+
+//input placeholder (framework.scss)
+@mixin inputPlaceholder($color, $font-weight, $opacity) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-weight: $font-weight;
+		opacity: $opacity;
+	}
+	&:-moz-placeholder{
+		color: $color;
+		font-weight: $font-weight;
+		opacity: $opacity;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		font-weight: $font-weight;
+		opacity: $opacity;
+	}
+	&:-ms-input-placeholder{
+		color: $color;
+		font-weight: $font-weight;
+		opacity: $opacity;
+	}
+}
+
+//saturate preserving grayscale 
+@function saturate-maybe($color, $amount) {
+  @return if(saturation($color) <= 0.01, $color, saturate($color, $amount));
+}
+
+// Color Mixin (colors.scss)
+@mixin generateColors($name, $color, $pair: #fff){
+	.#{$name} {
+		background: $color !important;
+
+		@if $pair == #fff {
+			 color:$pair !important;
+
+			 svg {
+					fill:$pair !important;
+			 }
+		} @else {
+			 color:$pair!important;
+
+			 svg {
+					fill:$pair !important;
+			 }
+		}
+
+		// @if $color == #fff {
+		// 	.slide.whiteSlide & {
+		// 		/* base: */
+		// 		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10), 0 1px 4px 0 rgba(0,0,0,0.10);
+		// 	}
+		// }
+	}
+	 
+	//for stroke buttons
+	.text-#{$name} {
+		color: $color !important;
+		
+		&.button svg {
+			 fill: $color !important;
+		}
+	}
+
+	.stroke.button.#{$name} {
+		color: $color !important;
+		border-color: $color !important;
+
+		svg {
+			fill: $color !important;
+		}
+	}
+}
+
+// Insert Media
+@mixin media($width, $minOrMax) {
+	@if $minOrMax == "max" {
+		$width: $width - 1px;
+	}
+
+  @media (#{$minOrMax}-width: $width) { @content; }
+}
+
+// Insert Media Range
+@mixin mediaRange($width-1, $width-2) {
+  @media (max-width: $width-1) and (min-width: $width-2) { @content; }
+}
