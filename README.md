@@ -27,6 +27,8 @@ We are sick of having notifications, messages, and information everywhere which 
 
 **Play With Powerful Built-In Modules**
 
+![enter image description here](https://cdn-images-1.medium.com/max/1600/1*9IeXQEuVoUrz_jSOjh-ErQ.gif)
+
 The clean design is not the only amazing thing that comes with [Slides](https://designmodo.com/slides/). This app has a lot of powerful and practical built-in modules that are easy to set up and customize:
 
  - **Typography** - Perfect set of the typographic elements for blogs    and articles.
