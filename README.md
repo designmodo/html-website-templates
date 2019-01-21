@@ -3,7 +3,7 @@
 # Free HTML Website Templates
 Free HTML Email templates created using the [Slides Website Builder](https://designmodo.com/slides/).
 
-![Website template](https://cdn-images-1.medium.com/max/1600/1*bP21uSNUzKMv60L2NGIYgw.gif)
+![Website template](https://cdn-images-1.medium.com/max/2600/1*FcEojjCrw12vB2RrYY7I1Q.png)
 
 ## [Slides: A Static Website Builder](https://designmodo.com/slides/)
 
@@ -21,7 +21,7 @@ As a developer-friendly app Slides is offering a piece of mind and less stress w
 
 **Create Websites With Fully Integrated Info**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IfKkAo0dSNk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Tutorial - https://www.youtube.com/watch?v=IfKkAo0dSNk
 
 We are sick of having notifications, messages, and information everywhere which is why Slides app takes care that all the info you need is well integrated. That means you can chat, discuss, show, collect emails and polls, provide directions and more. This awesome collection of integrations will expand your selling capabilities.
 
