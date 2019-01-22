@@ -46,6 +46,10 @@ The clean design is not the only amazing thing that comes with [Slides](https://
 
 This app is perfect for those who are willing to design outstanding websites as it offers numerous possibilities for creation.
 
+**License**
+
+If you find the tool useful, please share it with your friends or mention us on your website. Use the templates for personal or commercial projects, but don't sell them!
+
 **Credits**
 
 Developed by [Designmodo](https://designmodo.com).
