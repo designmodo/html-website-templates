@@ -1,9 +1,18 @@
-
-
 # Free HTML Website Templates
 Free HTML Email templates created using the [Slides Website Builder](https://designmodo.com/slides/).
 
-![Website template](https://cdn-images-1.medium.com/max/2600/1*FcEojjCrw12vB2RrYY7I1Q.png)
+Here are a few website templates you can use for free.
+
+**Screenshots - Download the Templates to See the Animations**
+
+![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot.jpg)
+
+![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot2.jpg)
+
+![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot3.jpg)
+
+![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot4.jpg)
+
 
 ## [Slides: A Static Website Builder](https://designmodo.com/slides/)
 
