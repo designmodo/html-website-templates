@@ -1,4 +1,4 @@
-# Free Static HTML Website Templates
+# Free Static HTML Website Templates - Amazing and mesmerizing webpage designs
 Free Static HTML Email templates created using the [Slides Website Builder](https://designmodo.com/slides/).
 
 Here are a few [static website templates](https://designmodo.com/static-website-templates/) you can use for free.
