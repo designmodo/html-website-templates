@@ -1,9 +1,9 @@
 # Free Static HTML Website Templates
 Free Static HTML Email templates created using the [Slides Website Builder](https://designmodo.com/slides/).
 
-Here are a few [static website templates](https://designmodo.com/static-website-templates/) you can use for free.
+Here a few [static website templates](https://designmodo.com/static-website-templates/) Email templates you can use for free.
 
-**Screenshots - Download the Templates to See the Animations**
+**Screenshots - Download the Templates to See the Animation**
 
 ![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot.jpg)
 
@@ -16,7 +16,7 @@ Here are a few [static website templates](https://designmodo.com/static-website-
 
 ## [Slides: A Static Website Builder](https://designmodo.com/slides/)
 
-By the look of the website, you can tell a lot about business, service or persona. Generally, design speaks more than a thousand words. The choice of colors, fonts or photos will determine whether you are worth someone´s attention. Also, it will either help your copy stand out or destroy it.
+By the look of the website, you can tell a lot about business, service or personal. Generally, design speaks more than a thousand words. The choice of colors, fonts or photos will determine whether you are worth someone´s attention. Also, it will either help your copy stand out or destroy it.
 
 What makes one website superior is the right combination of content and design. Being different, unique is always a plus, which is why you need proper tools to make it happen. **Slides is a static website builder that will help you make the difference** and become attractive to the eye of your preferred audience.
 
@@ -42,16 +42,16 @@ The clean design is not the only amazing thing that comes with [Slides](https://
  - **Sound** - Enhance the experience with background music.
  - **Popups** - Add video and other content with a new layer.
  - **User interface** - Pre-built buttons, inputs, and dropdowns for form elements.
- -  Drag & drop builder
- -  Responsive, retina-ready, animated
- -  Ready-made templates
- -  Clean Code
- -  Well Documented
- -  SCSS Support
- -  Material Icons
- -  SEO Friendly
- -  Multi-page Website
- -  Popular services integrations
+ -  Drag & drop builder.
+ -  Responsive, retina-ready, animated.
+ -  Ready-made templates.
+ -  Clean Code.
+ -  Well Documented.
+ -  SCSS Support.
+ -  Material Icons.
+ -  SEO Friendly.
+ -  Multi-page Website.
+ -  Popular services integrations.
 
 This app is perfect for those who are willing to design outstanding websites as it offers numerous possibilities for creation.
 
