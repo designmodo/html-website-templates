@@ -152,7 +152,7 @@ h1, .h1 {
   line-height: 1.285;
   font-weight: 300;
   margin-bottom: 20px;
-  letter-spacing: -0.036em;
+  letter-spacing: -0.036em;  /* 1em = 16px */
 }
 h1.big, .h1.big {
   font-size: 58px;
@@ -288,7 +288,7 @@ blockquote.micro {
 }
 
 blockquote {
-  padding-left: 2em;
+  padding-left: 2em;     /* 1em = 16px */
   border-left: 2px solid;
 }
 
@@ -646,7 +646,7 @@ small .small {
 .button.small.uppercase {
   font-size: 12px;
   padding: 12px 16px;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.125em; /* 1em = 16px */
 }
 .button.small.uppercase.round {
   padding-left: 19px;
