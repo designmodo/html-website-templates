@@ -26,19 +26,19 @@ It is always useful to have help while creating a website from scratch. Working 
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*-4hGnCc58E-7E8YCEILNrQ.gif)
 
-As a developer-friendly app Slides is offering a piece of mind and less stress while creating your perfect website. **What makes it developer friendly?** First of all, you don´t have to build a website from scratch because all the important stuff you need are built-in for you. Built with HTML, CSS, and JS Slides include code that’s easy to understand and easy to change, no other frameworks are needed.
+As a developer-friendly app Slides is offering a peace of mind and less stress while creating your perfect website. **What makes it developer friendly?** First of all, you don´t have to build a website from scratch because all the important stuff you need is built-in for you. Built with HTML, CSS, and JS Slides include code that’s easy to understand and easy to change, no other frameworks are needed.
 
 **Create Websites With Fully Integrated Info**
 
 Tutorial - https://www.youtube.com/watch?v=IfKkAo0dSNk
 
-We are sick of having notifications, messages, and information everywhere which is why Slides app takes care that all the info you need is well integrated. That means you can chat, discuss, show, collect emails and polls, provide directions and more. This awesome collection of integrations will expand your selling capabilities.
+We are sick of having notifications, messages, and information everywhere which is why Slides app takes care that all the info you need is well integrated. That means you can chat, discuss, show, collect emails and polls, provide directios, and more. This awesome collection of integrations will expand your selling capabilities.
 
 **Play With Powerful Built-In Modules**
 
 The clean design is not the only amazing thing that comes with [Slides](https://designmodo.com/slides/). This app has a lot of powerful and practical built-in modules that are easy to set up and customize:
 
- - **Typography** - Perfect set of the typographic elements for blogs    and articles.
+ - **Typography** - Perfect set of typographic elements for blogs    and articles.
  - **Sound** - Enhance the experience with background music.
  - **Popups** - Add video and other content with a new layer.
  - **User interface** - Pre-built buttons, inputs, and dropdowns for form elements.
@@ -63,7 +63,7 @@ If you find the tool useful, please share it with your friends or mention us on 
 
 **1.0**
 
-- Four free templates released.
+- Four free templates were released.
 
 **Credits**
 
