@@ -29,6 +29,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 ol, ul, li {
   list-style: none;
+   text-transform:uppercase;
 }
 
 blockquote, q {
