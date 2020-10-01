@@ -12,6 +12,7 @@ Here are a few [static website templates](https://designmodo.com/static-website-
 ![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot3.jpg)
 
 ![Website template](https://raw.githubusercontent.com/designmodo/html-website-templates/master/images/template-screenshot4.jpg)
+![website template].(https://mertjf.github.io/tailblocks/)
 
 
 ## [Slides: A Static Website Builder](https://designmodo.com/slides/)
@@ -67,4 +68,4 @@ If you find the tool useful, please share it with your friends or mention us on 
 
 **Credits**
 
-Developed by [Designmodo](https://designmodo.com).
+Developed by 
