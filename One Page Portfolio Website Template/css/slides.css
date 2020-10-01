@@ -21,6 +21,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, hr, bl
   vertical-align: baseline;
   margin: 0;
   padding: 0;
+   box-sizing:border-box;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -52,6 +53,11 @@ html {
   position: static !important;
   top: 0 !important;
   box-sizing: border-box;
+     margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 *, *:before, *:after {
@@ -68,13 +74,7 @@ html {
  *
  *
  */
-html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+
 
 body {
   position: absolute;
