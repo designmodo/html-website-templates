@@ -1,0 +1,129 @@
+h1{
+ font-size: 400%;
+  text-align:center;
+  font-family:Trattatello, fantasy;
+width:100%;
+}
+h2{
+color: white;
+font-size: 300%;
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#text{
+font-family:Parkavenue, cursive;
+color:white;
+font-size: 130%;
+ text-align:justify;
+}
+p
+{
+ font-size: 320%;
+  text-align:center;
+  font-family:Trattatello, fantasy;
+width:100%;
+}
+nav
+{
+  width:100%;
+}
+body{
+ background-image: url("back.jpg");
+
+}
+#im{
+width:30%;
+height: 50%;
+border-radius: 20%;
+align: centre;
+display: inline-block; margin-left: auto; margin-right: auto;
+}
+aside{
+width:58%;
+text-align:center;
+float:right;
+display- inline-block;
+}
+button{
+padding: 20px;
+cursor: pointer;
+margin:5px;
+float:none;
+}
+.jumbotron {
+padding-bottom: 0.5em;
+padding-top: 0.5em;
+border-radius:15px;
+width: 100%;
+float:none;
+}
+i{
+padding-left:45px;
+color: white;
+font-size:10%;
+}
+section{
+margin:5%;
+padding-bottom: 0;
+}
+
+.card {
+         margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 2%; /* Added */
+font-size: 30%;
+
+}
+div{
+text-align:center;
+}
+.card-body{
+display:block;
+width:50%;
+float:none;
+margin-bottom: 10%;
+margin: 0 auto;
+text-align: center;
+}
+#jum{
+width:25em ;
+ background-color:yellow ; 
+float:none;
+margin-bottom: 10%;
+margin: 0 auto;
+padding:0;
+
+}
+h3{
+font-size:1.5em;
+
+}
+.carousel-item{
+    height: 20%;
+width: 30%;
+} 
+.carousel-item img{
+     
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+width: 50%; margin: auto;
+}
+a{
+text-decoration: none;
+}
+
+button{
+text-decoration:none;
+}
+a:link {
+  color: green;
+}
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+} 
