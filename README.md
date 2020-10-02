@@ -1,5 +1,5 @@
 # Free Static HTML Website Templates
-Free Static HTML Email templates created using the [Slides Website Builder](https://designmodo.com/slides/).
+Free responsive Static HTML Email templates being created using the [Slides Website Builder](https://designmodo.com/slides/).
 
 Here are a few [static website templates](https://designmodo.com/static-website-templates/) you can use for free.
 
@@ -16,7 +16,7 @@ Here are a few [static website templates](https://designmodo.com/static-website-
 
 ## [Slides: A Static Website Builder](https://designmodo.com/slides/)
 
-By the look of the website, you can tell a lot about business, service or persona. Generally, design speaks more than a thousand words. The choice of colors, fonts or photos will determine whether you are worth someone´s attention. Also, it will either help your copy stand out or destroy it.
+By looking at website, one can easily tell a lot about business, service or about personal. Generally, one's design speaks more than a thousand of words. The choice of colors, fonts or photos will determine whether you are worth someone´s attention. Also, it will either help your copy stand out or destroy it.
 
 What makes one website superior is the right combination of content and design. Being different, unique is always a plus, which is why you need proper tools to make it happen. **Slides is a static website builder that will help you make the difference** and become attractive to the eye of your preferred audience.
 
